@@ -4008,3 +4008,13 @@ Processing by PostsController#create as HTML
   [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
 Redirected to http://165.227.31.208:52892/posts/20
 Completed 302 Found in 13ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/posts/20" for 69.42.16.152 at 2018-10-03 01:13:13 +0000
+Cannot render console from 69.42.16.152! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 20]]
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered posts/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.6ms)
