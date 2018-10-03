@@ -3899,3 +3899,5 @@ Cannot render console from 69.42.16.152! Allowed networks: 127.0.0.1, ::1, 127.0
 Processing by PostsController#show as HTML
   Parameters: {"id"=>"17"}
   [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 17]]
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.2ms)
