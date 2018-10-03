@@ -3997,3 +3997,14 @@ Processing by PostsController#new as HTML
   Rendered posts/_form.html.erb (0.9ms)
   Rendered posts/new.html.erb within layouts/application (1.7ms)
 Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 69.42.16.152 at 2018-10-03 01:13:13 +0000
+Cannot render console from 69.42.16.152! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1UAotecB+D3ytckYQJXMssDhH6EbYlpV5l4DgXzSSJaNBORG4MNIgJWRZyzEp4yzjCafRFoZAvuKARkKZV5mWw==", "post"=>{"author_id"=>"4", "title"=>"hi", "description"=>"hello"}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Hi"], ["description", "hello"], ["author_id", 4], ["created_at", "2018-10-03 01:13:13.083995"], ["updated_at", "2018-10-03 01:13:13.083995"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://165.227.31.208:52892/posts/20
+Completed 302 Found in 13ms (ActiveRecord: 3.5ms)
